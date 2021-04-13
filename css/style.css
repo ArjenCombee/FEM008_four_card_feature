@@ -1,3 +1,108 @@
+/* BASIC STYLES */
+:root {
+  --color-primary-red: hsl(0, 78%, 62%);
+  --color-primary-cyan: hsl(180, 62%, 55%);
+  --color-primary-orange: hsl(34, 97%, 64%);
+  --color-primary-blue: hsl(212, 86%, 64%);
+
+  --color-neutral-dark-blue: hsl(234, 12%, 34%);
+  --color-neutral-grayish-blue: hsl(229, 6%, 66%);
+  --color-neutral-ligh-gray: hsl(0, 0%, 98%);
+
+  --font: 'Poppins', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body {
+  background-color: var(--color-neutral-ligh-gray);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* SOLUTION STYLES */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 21rem;
+  margin: 6rem auto 5rem;
+}
+.intro {
+  color: var(--color-neutral-dark-blue);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.intro__title {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 2;
+}
+.intro__title span {
+  display: block;
+  font-weight: 600;
+}
+.intro__body {
+  color: var(--color-neutral-grayish-blue);
+}
+.cards {
+  color: var(--color-neutral-dark-blue);
+}
+.cards__item {
+  background-color: #fff;
+  margin-bottom: 1.7rem;
+  height: 15rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.cards__item--title {
+  padding-bottom: 0.6rem;
+}
+.cards__item--body {
+  font-size: 0.9rem;
+  color: var(--color-neutral-grayish-blue);
+}
+.supervisor {
+  border-top: 5px solid var(--color-primary-cyan);
+  background: url('../images/icon-supervisor.svg') no-repeat;
+}
+.team {
+  border-top: 5px solid var(--color-primary-red);
+  background: url('../images/icon-team-builder.svg') no-repeat;
+}
+.karma {
+  border-top: 5px solid var(--color-primary-orange);
+  background: url('../images/icon-karma.svg') no-repeat;
+}
+.calc {
+  border-top: 5px solid var(--color-primary-blue);
+  background: url('../images/icon-calculator.svg') no-repeat;
+}
+.cards__item {
+  background-size: 4rem;
+  background-position: bottom 2rem right 2rem;
+}
 /* FRONTENDMENTOR STYLES */
 .attribution {
   display: block;
@@ -5,7 +110,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: hsl(228, 45%, 80%);
   font-size: 11px;
   text-align: center;
